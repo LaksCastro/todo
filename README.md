@@ -10,6 +10,6 @@ Copy the repository:
  
  You may prefer to install the [CSCore nuget package](https://www.nuget.org/packages/CSCore/):
 
-    Install-Package CSCore
+    git clone https://github/LaksCastro/todo.git
     
 For **FFmpeg** support, install the [CSCore.Ffmpeg nuget package](https://www.nuget.org/packages/CSCore.Ffmpeg/)
