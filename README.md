@@ -18,5 +18,8 @@ Run the script:
 
     npm run start
     
-Done! in a few seconds you should open a browser tab with this screen:
-![Main Print Screen](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(6).png?alt=media&token=5fd2268d-f46c-44cc-806e-d2061ebdc02e)
+Done! in a few seconds you should open a browser tab with this screen:  
+    ![Main Print Screen](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(6).png?       alt=media&token=5fd2268d-f46c-44cc-806e-d2061ebdc02e)
+    
+And your command prompt should look like this:
+![Prompt Print Screen](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(6).png?alt=media&token=5fd2268d-f46c-44cc-806e-d2061ebdc02e)
