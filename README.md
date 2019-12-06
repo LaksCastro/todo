@@ -10,7 +10,7 @@ Copy the repository:
 
     git clone https://github/LaksCastro/todo.git
     
-For **FFmpeg** support, install the [CSCore.Ffmpeg nuget package](https://www.nuget.org/packages/CSCore.Ffmpeg/)
+Install dependencies, remember, let's use example `npm` but you can use the package manager of your choice:
 
     [npm or yarn] install
     
