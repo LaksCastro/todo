@@ -4,3 +4,7 @@ This is a simple To Do List platform that uses React Js and Firestore as the bac
 
 # Live Demo
 You can check the working application at [this link.](https://laks-todo.netlify.com)
+
+# Turn on your machine
+Copy the repository:
+`git clone`
