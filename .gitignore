@@ -25,6 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #Firebase Credentials
-/src/secret/firebaseConfig.js
 .env-cmdrc
 .env
