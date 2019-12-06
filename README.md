@@ -25,4 +25,4 @@ And your command prompt should look like this:
 ![Prompt Print Screen](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(7).png?alt=media&token=a482af6a-8145-439e-93b7-da286a0dfa34)
 
 # Thanks
-This is a very simple application that I used to learn some new technologies for me, and during the development process the [Rocketseat community](https://rocketseat.com.br/comunidade) was present all the time, which is why I consider it one of the best Brazilian communities.
+This is a very simple application that I used to learn some new technologies for me, and during the development process the [Rocketseat community](https://rocketseat.com.br/comunidade) was present all the time, which is why I consider it __one of the best Brazilian communities.__
