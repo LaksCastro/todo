@@ -12,10 +12,10 @@ Copy the repository:
     
 Install dependencies, remember, let's use example `npm` but you can use the package manager of your choice:
 
-    [npm or yarn] install
+    npm or install
     
 Run the script:
 
-    [npm or yarn] run start
+    npm run start
     
 Done! in a few seconds you should open a browser tab with this screen:
