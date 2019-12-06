@@ -7,4 +7,9 @@ You can check the working application at [this link.](https://laks-todo.netlify.
 
 # Turn on your machine
 Copy the repository:    
-`git clone`
+ 
+ You may prefer to install the [CSCore nuget package](https://www.nuget.org/packages/CSCore/):
+
+    Install-Package CSCore
+    
+For **FFmpeg** support, install the [CSCore.Ffmpeg nuget package](https://www.nuget.org/packages/CSCore.Ffmpeg/)
