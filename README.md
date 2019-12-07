@@ -27,7 +27,10 @@ And your command prompt should look like this:
 ![Prompt Print Screen](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(7).png?alt=media&token=174249d5-e764-4304-a357-a86a7d2ca941)
 
 # Embla Carousel React
-On the homepage I use my favorite library when it comes to Carousel: [Embla Carousel React,](https://davidcetinkaya.github.io/embla-carousel/) by [David Cetinkaya](https://github.com/davidcetinkaya) but not for nothing, this library has a simple installation: in four, five lines of CSS code and an import I have access to a fluid, fast, clean, simple and beautiful carousel.
+On the homepage I use my favorite library when it comes to Carousel: [Embla Carousel React,](https://davidcetinkaya.github.io/embla-carousel/) by [David Cetinkaya](https://github.com/davidcetinkaya) but not for nothing, this library has a simple installation: in four, five lines of CSS code and an import I have access to a fluid, fast, clean, simple and beautiful carousel. This library is simply amazing.  
+See the demo page:
+
+    ![Demo Page Embla Carousel React](https://davidcetinkaya.github.io/embla-carousel/)
 
 # Thanks
 This is a very simple application that I used to learn some new technologies for me, and during the development process the [Rocketseat community](https://rocketseat.com.br/comunidade) was present all the time, which is why I consider it __one of the best Brazilian communities.__
