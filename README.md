@@ -30,7 +30,7 @@ And your command prompt should look like this:
 On the homepage I use my favorite library when it comes to Carousel: [Embla Carousel React,](https://davidcetinkaya.github.io/embla-carousel/) by [David Cetinkaya](https://github.com/davidcetinkaya) but not for nothing, this library has a simple installation: in four, five lines of CSS code and an import I have access to a fluid, fast, clean, simple and beautiful carousel. This library is simply amazing.  
 See the demo page:
 
-![Demo Page Embla Carousel React](https://davidcetinkaya.github.io/embla-carousel/)
+![Demo Page Embla Carousel React](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(8).png?alt=media&token=9d6c183a-9e87-4ca1-a0e5-79996c15e9ce)
 
 # Thanks
 This is a very simple application that I used to learn some new technologies for me, and during the development process the [Rocketseat community](https://rocketseat.com.br/comunidade) was present all the time, which is why I consider it __one of the best Brazilian communities.__
