@@ -12,7 +12,7 @@ Copy the repository:
     
 Install dependencies, remember, let's use example `npm` but you can use the package manager of your choice:
 
-    npm or install
+    npm install
     
 Run the script:
 
