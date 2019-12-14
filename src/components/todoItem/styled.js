@@ -18,7 +18,20 @@ export const TodoContainer = styled.div`
     background: #1c1b1f;
 
     display: flex;
+    flex-direction: column;
+
     align-items: center;
+`;
+export const TodoMainContent = styled.div`
+    display: flex;
+    flex: 1;
+    align-items: center;
+`;
+export const TodoToolsContainer = styled.div`
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
 `;
 export const TodoIconBox = styled.button`
     width: 42px;

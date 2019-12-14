@@ -70,46 +70,52 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                         : "#dd5145"
                 }
             >
-                <S.TodoIconBox
-                    color={
-                        item.marked
-                            ? "white"
-                            : item.completed
-                            ? "#79B538"
-                            : "#dd5145"
-                    }
-                    onClick={() => handleToggleMarked(item)}
-                    title="Toggle marked"
-                >
-                    {item.marked ? <Marked /> : <Unmarked />}
-                </S.TodoIconBox>
-                <S.TodoContent
-                    textDecoration={item.completed ? "line-through" : "none"}
-                >
-                    {item.text}
-                </S.TodoContent>
-                <S.TodoIconBox onClick={() => setEdit(item)}>
-                    <Edit />
-                </S.TodoIconBox>
-                <S.TodoIconBox
-                    onClick={() => handleRemoveTodo(item)}
-                    title="Remove"
-                >
-                    <Remove />
-                </S.TodoIconBox>
-                <S.TodoIconBox
-                    color={
-                        item.marked
-                            ? "white"
-                            : item.completed
-                            ? "#79B538"
-                            : "#dd5145"
-                    }
-                    onClick={() => handleToggleCompleted(item)}
-                    title="Toggle completed"
-                >
-                    {item.completed ? <Completed /> : <Uncompleted />}
-                </S.TodoIconBox>
+                <S.TodoMainContent>
+                    <S.TodoIconBox
+                        color={
+                            item.marked
+                                ? "white"
+                                : item.completed
+                                ? "#79B538"
+                                : "#dd5145"
+                        }
+                        onClick={() => handleToggleMarked(item)}
+                        title="Toggle marked"
+                    >
+                        {item.marked ? <Marked /> : <Unmarked />}
+                    </S.TodoIconBox>
+                    <S.TodoContent
+                        textDecoration={
+                            item.completed ? "line-through" : "none"
+                        }
+                    >
+                        {item.text}
+                    </S.TodoContent>
+                </S.TodoMainContent>
+                <S.TodoToolsContainer>
+                    <S.TodoIconBox onClick={() => setEdit(item)}>
+                        <Edit />
+                    </S.TodoIconBox>
+                    <S.TodoIconBox
+                        onClick={() => handleRemoveTodo(item)}
+                        title="Remove"
+                    >
+                        <Remove />
+                    </S.TodoIconBox>
+                    <S.TodoIconBox
+                        color={
+                            item.marked
+                                ? "white"
+                                : item.completed
+                                ? "#79B538"
+                                : "#dd5145"
+                        }
+                        onClick={() => handleToggleCompleted(item)}
+                        title="Toggle completed"
+                    >
+                        {item.completed ? <Completed /> : <Uncompleted />}
+                    </S.TodoIconBox>
+                </S.TodoToolsContainer>
             </S.TodoContainer>
         </S.TodoWrapper>
     );
