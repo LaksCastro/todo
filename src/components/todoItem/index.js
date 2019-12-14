@@ -71,6 +71,16 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                 }
             >
                 <S.TodoMainContent>
+                    <S.TodoContent
+                        textDecoration={
+                            item.completed ? "line-through" : "none"
+                        }
+                    >
+                        {item.text}
+                    </S.TodoContent>
+                </S.TodoMainContent>
+
+                <S.TodoToolsContainer>
                     <S.TodoIconBox
                         color={
                             item.marked
@@ -84,15 +94,6 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                     >
                         {item.marked ? <Marked /> : <Unmarked />}
                     </S.TodoIconBox>
-                    <S.TodoContent
-                        textDecoration={
-                            item.completed ? "line-through" : "none"
-                        }
-                    >
-                        {item.text}
-                    </S.TodoContent>
-                </S.TodoMainContent>
-                <S.TodoToolsContainer>
                     <S.TodoIconBox onClick={() => setEdit(item)}>
                         <Edit />
                     </S.TodoIconBox>

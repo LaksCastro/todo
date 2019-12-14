@@ -20,7 +20,7 @@ export const TodoContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    align-items: center;
+    align-items: flex-start;
 `;
 export const TodoMainContent = styled.div`
     display: flex;
@@ -29,9 +29,7 @@ export const TodoMainContent = styled.div`
 `;
 export const TodoToolsContainer = styled.div`
     display: flex;
-    flex: 1;
     align-items: center;
-    justify-content: space-between;
 `;
 export const TodoIconBox = styled.button`
     width: 42px;
@@ -52,7 +50,8 @@ export const TodoContent = styled.p`
     color: white;
     flex: 1;
     min-width: 0;
-    padding: 8px 2px;
+    padding: 16px;
+    padding-bottom: 8px;
     line-height: 1.4;
 
     text-decoration: ${props => props.textDecoration};
