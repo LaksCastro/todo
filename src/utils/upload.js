@@ -33,9 +33,9 @@ export function uploadPhoto(file, result, err) {
         return;
     }
     if (currentFile.size / 1000000 > 1)
-        toast.info("Your image is larger than 1mb, it may take a while ...");
+        toast.info("Your image is larger than 1mb, it may take a while...");
     const ref = firebase.storage().ref();
-    const name = currentFile.name + "-" + createUniqueId();
+    const name = createUniqueId() + "-" + currentFile.name;
     const metadata = {
         contentType: currentFile.type
     };
