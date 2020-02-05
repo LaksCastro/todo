@@ -28,7 +28,7 @@ And your command prompt should look like this:
 
 # Embla Carousel React
 On the homepage I use my favorite library when it comes to Carousel: [Embla Carousel React,](https://davidcetinkaya.github.io/embla-carousel/) by [David Cetinkaya](https://github.com/davidcetinkaya) but not for nothing, this library has a simple installation: in four, five lines of CSS code and an import I have access to a fluid, fast, clean, simple and beautiful carousel. This library is simply amazing.  
-See the demo page:
+See the demo page live:
 
 ![Demo Page Embla Carousel React](https://firebasestorage.googleapis.com/v0/b/todo-dd76b.appspot.com/o/Captura%20de%20Tela%20(8).png?alt=media&token=9d6c183a-9e87-4ca1-a0e5-79996c15e9ce)
 
