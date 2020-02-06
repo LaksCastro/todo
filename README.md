@@ -6,6 +6,8 @@ This is a simple To Do List platform that uses React Js and Firestore as the bac
 You can check the working application at [this link.](https://laks-todo.netlify.com)
 
 # Turn on your machine
+Dont forget to check enviroment variables, in .env.example file, you can get your variables creating a new Firebase project [here](https://console.firebase.google.com/)
+
 Copy the repository:
 
     git clone https://github/LaksCastro/todo.git
