@@ -12,7 +12,7 @@ Copy the repository:
 
     git clone https://github/LaksCastro/todo.git
     
-Install dependencies, remember, let's use example `npm` but you can use the package manager of your choice:
+Install dependencies, remember, lets use example `npm` but you can use the package manager of your choice:
 
     npm install
     
