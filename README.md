@@ -1,4 +1,4 @@
-![To Do List Logo](./src/assets/logo192.png)
+<img align="center" src="./src/assets/logo192.png" alt="To Do List Logo" />
 
 This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.
 
