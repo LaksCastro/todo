@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     align-items: center;
 
 
-    padding-bottom: 123px;
+    padding-bottom: 75px;
 `;
 
 export default function ViewportComponent({ children }) {
