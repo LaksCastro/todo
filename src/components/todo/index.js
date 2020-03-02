@@ -117,7 +117,6 @@ const Todo = props => {
             <S.NavWrapper>
                 <S.NavContainer>
                     <NavFormAdd />
-                    <NavTools />
                 </S.NavContainer>
             </S.NavWrapper>
 
