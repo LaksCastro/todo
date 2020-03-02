@@ -28,7 +28,10 @@ export default createGlobalStyle`
     -moz-user-select: none;
     -ms-user-select: none; 
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
     }
+    ::-webkit-scrollbar { display: none; }
+    
     [disabled]{
         color: inherit;
     }
