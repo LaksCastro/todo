@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import "./ReactToastify.css";
 
 export default createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
     *{
         margin: 0;
         padding: 0;
@@ -10,7 +10,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         outline: none;
 
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Press Start 2P', sans-serif;
         font-size: 1em;
 
         text-rendering: optimizeLegibility !important;
