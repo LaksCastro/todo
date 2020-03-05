@@ -16,7 +16,6 @@ import UpdateTodo from "../updateTodo/index";
 import TodoItem from "../todoItem/index";
 
 import NavFormAdd from "../navFormAdd/index";
-import NavTools from "../navTools/index";
 
 import HeaderMenu from "../headerMenu/index";
 

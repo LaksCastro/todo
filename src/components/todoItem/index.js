@@ -1,10 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { useDispatch } from "react-redux";
-import { Types as TypesTodo } from "../../store/ducks/todo";
-
-import { RadioCircleMarked as Marked } from "styled-icons/boxicons-regular/RadioCircleMarked";
-import { RadioCircle as Unmarked } from "styled-icons/boxicons-regular/RadioCircle";
+import { Types as TypesToast } from "../../store/ducks/toast"
+import { useDispatch, useSelector } from "react-redux";
 
 import { Checkbox as Uncompleted } from "styled-icons/boxicons-regular/Checkbox";
 import { CheckboxChecked as Completed } from "styled-icons/boxicons-regular/CheckboxChecked";
@@ -16,38 +13,47 @@ import { db } from "../../firebase";
 
 import * as S from "./styled";
 
-const TodoItem = ({ item, setEdit, updateInput }) => {
+const TodoItem = ({ item, setEdit }) => {
     const dispatch = useDispatch();
+    const { isVisible } = useSelector(state => state.toast);
+    let buttonPressTimer
 
-    //TODO ITEM ACTION
-    function handleToggleMarked(item) {
-        dispatch({
-            type: TypesTodo.UPDATE_TODO,
-            payload: {
-                newTodo: {
-                    ...item,
-                    marked: !item.marked
-                }
-            }
-        });
-    }
+    const [confirm, setConfirm] = useState({
+        visible: false,
+        onConfirm: deleteTodo,
+        onCancel: () => {
+            setConfirm({
+                ...confirm,
+                visible: false
+            });
+        }
+    });
 
-    function handleRemoveTodo(item) {
+    function deleteTodo() {
+        console.log("chego aq")
         db.collection("todo")
             .doc(item.id)
             .delete();
     }
-    function handleToggleCompleted(item) {
+
+    //TODO ITEM ACTION
+    function handleRemoveTodo() {
+        setConfirm({
+            ...confirm,
+            visible: true
+        });
+    }
+    function handleToggleCompleted() {
         db.collection("todo")
             .doc(item.id)
             .update({
                 completed: !item.completed
             });
     }
-    function copyToClipboard(text) {
+    function copyToClipboard() {
         const textArea = document.createElement("textarea");
         textArea.value = item.text;
-        textArea.style.position = "fixed"; //avoid scrolling to bottom
+        textArea.style.position = "fixed";
         document.body.appendChild(textArea);
         textArea.focus();
         textArea.select();
@@ -55,17 +61,43 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
         document.body.removeChild(textArea);
     }
 
+    function handleButtonPress() {
+        buttonPressTimer = setTimeout(onLongPress, 500);
+    }
+    function onLongPress() {
+        copyToClipboard(item.text);
+        if (isVisible) return;
+        dispatch({
+            type: TypesToast.REQUEST_MESSAGE,
+            payload: {
+                message: "Copied"
+            }
+        });
+    }
+    function handleButtonRelease() {
+        clearTimeout(buttonPressTimer);
+    }
+
+    function onConfirmDelete() {
+        confirm.onConfirm();
+    }
+    function onCancelDelete() {
+        confirm.onCancel();
+    }
+
     return (
         <S.TodoWrapper
+            onTouchStart={handleButtonPress}
+            onTouchEnd={handleButtonRelease}
+            onMouseDown={handleButtonPress}
+            onMouseUp={handleButtonRelease}
+            onMouseLeave={handleButtonRelease}
             background={item.marked ? "dimgrey" : "transparent"}
             key={item.id}
-            onClick={() => copyToClipboard(item.text)}
         >
             <S.TodoContainer
                 borderColor={
-                    item.marked
-                        ? "white"
-                        : item.completed
+                    item.completed
                         ? "#79B538"
                         : "#dd5145"
                 }
@@ -80,43 +112,40 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                     </S.TodoContent>
                 </S.TodoMainContent>
 
-                <S.TodoToolsContainer>
-                    <S.TodoIconBox
-                        color={
-                            item.marked
-                                ? "white"
-                                : item.completed
-                                ? "#79B538"
-                                : "#dd5145"
-                        }
-                        onClick={() => handleToggleMarked(item)}
-                        title="Toggle marked"
-                    >
-                        {item.marked ? <Marked /> : <Unmarked />}
-                    </S.TodoIconBox>
-                    <S.TodoIconBox onClick={() => setEdit(item)}>
-                        <Edit />
-                    </S.TodoIconBox>
-                    <S.TodoIconBox
-                        onClick={() => handleRemoveTodo(item)}
-                        title="Remove"
-                    >
-                        <Remove />
-                    </S.TodoIconBox>
-                    <S.TodoIconBox
-                        color={
-                            item.marked
-                                ? "white"
-                                : item.completed
-                                ? "#79B538"
-                                : "#dd5145"
-                        }
-                        onClick={() => handleToggleCompleted(item)}
-                        title="Toggle completed"
-                    >
-                        {item.completed ? <Completed /> : <Uncompleted />}
-                    </S.TodoIconBox>
-                </S.TodoToolsContainer>
+                <S.TodoToolsWrapper>
+                    <S.TodoToolsContainer>
+                        <S.TodoIconBox
+                            color={
+                                item.completed
+                                    ? "#79B538"
+                                    : "#dd5145"
+                            }
+                            onClick={handleToggleCompleted}
+                            title="Toggle completed"
+                        >
+                            {item.completed ? <Completed /> : <Uncompleted />}
+                        </S.TodoIconBox>
+                        <S.TodoIconBox onClick={() => setEdit(item)}>
+                            <Edit />
+                        </S.TodoIconBox>
+                        <S.TodoIconBox
+                            className={confirm.visible ? "hide" : "visible"}
+                            onClick={handleRemoveTodo}
+                            title="Remove"
+                        >
+                            <Remove />
+                        </S.TodoIconBox>
+                    </S.TodoToolsContainer>
+                    <S.TodoButtonsWrapper>
+                        <S.TodoButton color="#f1f1f1" onClick={onCancelDelete} className={confirm.visible ? "visible" : "hide"}>
+                            Cancel
+                        </S.TodoButton>
+                        <S.TodoButton color="#fff" background="#DD5145" onClick={onConfirmDelete} className={confirm.visible ? "visible" : "hide"}>
+                            Confirm
+                        </S.TodoButton>
+                    </S.TodoButtonsWrapper>
+                </S.TodoToolsWrapper>
+
             </S.TodoContainer>
         </S.TodoWrapper>
     );
