@@ -32,10 +32,8 @@ export const TodoToolsContainer = styled.div`
     align-items: center;
 `;
 export const TodoIconBox = styled.button`
-    width: 42px;
-    height: 42px;
-
-    margin: 0 2px;
+    width: 36px;
+    height: 36px;
 
     color: ${props => props.color || "dimgrey"};
     padding: 8px;
@@ -43,7 +41,7 @@ export const TodoIconBox = styled.button`
     transition: var(--transition);
 
     &:hover {
-        filter: grayscale(50%);
+        background: rgba(255,255,255,0.05);
     }
 `;
 export const TodoContent = styled.p`
@@ -51,7 +49,6 @@ export const TodoContent = styled.p`
     flex: 1;
     min-width: 0;
     padding: 16px;
-    padding-bottom: 8px;
     line-height: 1.4;
 
     text-decoration: ${props => props.textDecoration};

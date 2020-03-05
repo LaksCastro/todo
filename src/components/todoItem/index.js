@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useDispatch } from "react-redux";
 import { Types as TypesTodo } from "../../store/ducks/todo";
@@ -19,6 +19,7 @@ import * as S from "./styled";
 const TodoItem = ({ item, setEdit, updateInput }) => {
     const dispatch = useDispatch();
 
+    let buttonPressTimer
     //TODO ITEM ACTION
     function handleToggleMarked(item) {
         dispatch({
@@ -44,10 +45,10 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                 completed: !item.completed
             });
     }
-    function copyToClipboard(text) {
+    function copyToClipboard() {
         const textArea = document.createElement("textarea");
         textArea.value = item.text;
-        textArea.style.position = "fixed"; //avoid scrolling to bottom
+        textArea.style.position = "fixed";
         document.body.appendChild(textArea);
         textArea.focus();
         textArea.select();
@@ -55,19 +56,31 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
         document.body.removeChild(textArea);
     }
 
+    function handleButtonPress() {
+        buttonPressTimer = setTimeout(() => copyToClipboard(item.text), 500);
+    }
+
+    function handleButtonRelease() {
+        clearTimeout(buttonPressTimer);
+    }
+
     return (
         <S.TodoWrapper
+            onTouchStart={handleButtonPress}
+            onTouchEnd={handleButtonRelease}
+            onMouseDown={handleButtonPress}
+            onMouseUp={handleButtonRelease}
+            onMouseLeave={handleButtonRelease}
             background={item.marked ? "dimgrey" : "transparent"}
             key={item.id}
-            onClick={() => copyToClipboard(item.text)}
         >
             <S.TodoContainer
                 borderColor={
                     item.marked
                         ? "white"
                         : item.completed
-                        ? "#79B538"
-                        : "#dd5145"
+                            ? "#79B538"
+                            : "#dd5145"
                 }
             >
                 <S.TodoMainContent>
@@ -81,19 +94,6 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                 </S.TodoMainContent>
 
                 <S.TodoToolsContainer>
-                    <S.TodoIconBox
-                        color={
-                            item.marked
-                                ? "white"
-                                : item.completed
-                                ? "#79B538"
-                                : "#dd5145"
-                        }
-                        onClick={() => handleToggleMarked(item)}
-                        title="Toggle marked"
-                    >
-                        {item.marked ? <Marked /> : <Unmarked />}
-                    </S.TodoIconBox>
                     <S.TodoIconBox onClick={() => setEdit(item)}>
                         <Edit />
                     </S.TodoIconBox>
@@ -108,8 +108,8 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                             item.marked
                                 ? "white"
                                 : item.completed
-                                ? "#79B538"
-                                : "#dd5145"
+                                    ? "#79B538"
+                                    : "#dd5145"
                         }
                         onClick={() => handleToggleCompleted(item)}
                         title="Toggle completed"
