@@ -7,21 +7,20 @@ export const { Types, Creators } = createActions({
 
 const INITIAL_STATE = {
     message: null,
-    isAnimating: false
+    isVisible: false
 };
 
 const request = (state = INITIAL_STATE, action) => {
     return {
         ...state,
-        isAnimating: true,
+        isVisible: true,
         message: action.payload.message
     };
 };
 const endMessage = (state = INITIAL_STATE, action) => {
     return {
         ...state,
-        isAnimating: false,
-        message: null
+        isVisible: false,
     };
 };
 export default createReducer(INITIAL_STATE, {

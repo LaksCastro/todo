@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { Types as TypesToast } from "../../store/ducks/toast"
+import { useDispatch, useSelector } from "react-redux";
 
 import { Checkbox as Uncompleted } from "styled-icons/boxicons-regular/Checkbox";
 import { CheckboxChecked as Completed } from "styled-icons/boxicons-regular/CheckboxChecked";
@@ -10,16 +13,37 @@ import { db } from "../../firebase";
 
 import * as S from "./styled";
 
-const TodoItem = ({ item, setEdit, updateInput }) => {
+const TodoItem = ({ item, setEdit }) => {
+    const dispatch = useDispatch();
+    const { isVisible } = useSelector(state => state.toast);
     let buttonPressTimer
-    
-    //TODO ITEM ACTION
-    function handleRemoveTodo(item) {
+
+    const [confirm, setConfirm] = useState({
+        visible: false,
+        onConfirm: deleteTodo,
+        onCancel: () => {
+            setConfirm({
+                ...confirm,
+                visible: false
+            });
+        }
+    });
+
+    function deleteTodo() {
+        console.log("chego aq")
         db.collection("todo")
             .doc(item.id)
             .delete();
     }
-    function handleToggleCompleted(item) {
+
+    //TODO ITEM ACTION
+    function handleRemoveTodo() {
+        setConfirm({
+            ...confirm,
+            visible: true
+        });
+    }
+    function handleToggleCompleted() {
         db.collection("todo")
             .doc(item.id)
             .update({
@@ -38,11 +62,27 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
     }
 
     function handleButtonPress() {
-        buttonPressTimer = setTimeout(() => copyToClipboard(item.text), 500);
+        buttonPressTimer = setTimeout(onLongPress, 500);
     }
-
+    function onLongPress() {
+        copyToClipboard(item.text);
+        if (isVisible) return;
+        dispatch({
+            type: TypesToast.REQUEST_MESSAGE,
+            payload: {
+                message: "Copied"
+            }
+        });
+    }
     function handleButtonRelease() {
         clearTimeout(buttonPressTimer);
+    }
+
+    function onConfirmDelete() {
+        confirm.onConfirm();
+    }
+    function onCancelDelete() {
+        confirm.onCancel();
     }
 
     return (
@@ -57,11 +97,9 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
         >
             <S.TodoContainer
                 borderColor={
-                    item.marked
-                        ? "white"
-                        : item.completed
-                            ? "#79B538"
-                            : "#dd5145"
+                    item.completed
+                        ? "#79B538"
+                        : "#dd5145"
                 }
             >
                 <S.TodoMainContent>
@@ -74,30 +112,40 @@ const TodoItem = ({ item, setEdit, updateInput }) => {
                     </S.TodoContent>
                 </S.TodoMainContent>
 
-                <S.TodoToolsContainer>
-                    <S.TodoIconBox onClick={() => setEdit(item)}>
-                        <Edit />
-                    </S.TodoIconBox>
-                    <S.TodoIconBox
-                        onClick={() => handleRemoveTodo(item)}
-                        title="Remove"
-                    >
-                        <Remove />
-                    </S.TodoIconBox>
-                    <S.TodoIconBox
-                        color={
-                            item.marked
-                                ? "white"
-                                : item.completed
+                <S.TodoToolsWrapper>
+                    <S.TodoToolsContainer>
+                        <S.TodoIconBox
+                            color={
+                                item.completed
                                     ? "#79B538"
                                     : "#dd5145"
-                        }
-                        onClick={() => handleToggleCompleted(item)}
-                        title="Toggle completed"
-                    >
-                        {item.completed ? <Completed /> : <Uncompleted />}
-                    </S.TodoIconBox>
-                </S.TodoToolsContainer>
+                            }
+                            onClick={handleToggleCompleted}
+                            title="Toggle completed"
+                        >
+                            {item.completed ? <Completed /> : <Uncompleted />}
+                        </S.TodoIconBox>
+                        <S.TodoIconBox onClick={() => setEdit(item)}>
+                            <Edit />
+                        </S.TodoIconBox>
+                        <S.TodoIconBox
+                            className={confirm.visible ? "hide" : "visible"}
+                            onClick={handleRemoveTodo}
+                            title="Remove"
+                        >
+                            <Remove />
+                        </S.TodoIconBox>
+                    </S.TodoToolsContainer>
+                    <S.TodoButtonsWrapper>
+                        <S.TodoButton color="#f1f1f1" onClick={onCancelDelete} className={confirm.visible ? "visible" : "hide"}>
+                            Cancel
+                        </S.TodoButton>
+                        <S.TodoButton color="#fff" background="#DD5145" onClick={onConfirmDelete} className={confirm.visible ? "visible" : "hide"}>
+                            Confirm
+                        </S.TodoButton>
+                    </S.TodoButtonsWrapper>
+                </S.TodoToolsWrapper>
+
             </S.TodoContainer>
         </S.TodoWrapper>
     );
