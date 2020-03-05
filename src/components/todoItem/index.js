@@ -1,10 +1,4 @@
-import React, { useState } from "react";
-
-import { useDispatch } from "react-redux";
-import { Types as TypesTodo } from "../../store/ducks/todo";
-
-import { RadioCircleMarked as Marked } from "styled-icons/boxicons-regular/RadioCircleMarked";
-import { RadioCircle as Unmarked } from "styled-icons/boxicons-regular/RadioCircle";
+import React from "react";
 
 import { Checkbox as Uncompleted } from "styled-icons/boxicons-regular/Checkbox";
 import { CheckboxChecked as Completed } from "styled-icons/boxicons-regular/CheckboxChecked";
@@ -17,22 +11,9 @@ import { db } from "../../firebase";
 import * as S from "./styled";
 
 const TodoItem = ({ item, setEdit, updateInput }) => {
-    const dispatch = useDispatch();
-
     let buttonPressTimer
+    
     //TODO ITEM ACTION
-    function handleToggleMarked(item) {
-        dispatch({
-            type: TypesTodo.UPDATE_TODO,
-            payload: {
-                newTodo: {
-                    ...item,
-                    marked: !item.marked
-                }
-            }
-        });
-    }
-
     function handleRemoveTodo(item) {
         db.collection("todo")
             .doc(item.id)

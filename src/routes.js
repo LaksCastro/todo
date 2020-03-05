@@ -13,6 +13,7 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 import Profile from "./pages/profile";
 import NotFound from "./pages/notFound";
+import MobileToast from "./components/mobileToast";
 
 import GlobalStyled from "./reset/index";
 import { ToastContainer } from "react-toastify";
@@ -79,6 +80,7 @@ const Routes = () => {
             <>
                 <GlobalStyled />
                 <ToastContainer />
+                <MobileToast />
                 <Switch>
                     <Route path="/" exact component={Index} />
                     <PrivateRoute
