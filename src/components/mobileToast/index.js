@@ -10,7 +10,6 @@ function MobileToast() {
     const toast = useSelector(state => state.toast)
     const { isVisible, message } = toast;
 
-
     function endMessage() {
         dispatch({
             type: TypesToast.END_MESSAGE
@@ -22,6 +21,7 @@ function MobileToast() {
             setTimeout(endMessage, 2000);
         }
     }, [isVisible])
+    
     return (
         <S.ToastWrapper className={isVisible ? "visible" : "hide"}>
             {message || ""}
