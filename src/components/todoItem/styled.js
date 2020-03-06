@@ -40,7 +40,6 @@ export const TodoButtonsWrapper = styled.div`
     display: flex;
     border-radius: 6px;
     overflow: hidden;
-    padding: 8px;
 `
 export const TodoButton = styled.button`
     padding: 8px 12px;
