@@ -41,7 +41,7 @@ export const TodoButtonsWrapper = styled.div`
     display: flex;
 `
 export const TodoButton = styled.button`
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     margin: 2px;
 
