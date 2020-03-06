@@ -29,7 +29,9 @@ export const TodoMainContent = styled.div`
 export const TodoToolsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding: 6px;
 `;
 export const TodoToolsContainer = styled.div`
     display: flex;
@@ -37,10 +39,12 @@ export const TodoToolsContainer = styled.div`
 `;
 export const TodoButtonsWrapper = styled.div`
     display: flex;
-    border-radius: 6px 0 0 0;
-    overflow: hidden;
 `
 export const TodoButton = styled.button`
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2px;
+
     padding: 8px 12px;
     color: ${props => props.color};
 
