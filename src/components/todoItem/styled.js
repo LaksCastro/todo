@@ -39,10 +39,12 @@ export const TodoToolsContainer = styled.div`
 `;
 export const TodoButtonsWrapper = styled.div`
     display: flex;
-    border-radius: 8px;
-    overflow: hidden;
 `
 export const TodoButton = styled.button`
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2px;
+
     padding: 8px 12px;
     color: ${props => props.color};
 
