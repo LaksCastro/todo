@@ -55,7 +55,6 @@ const TodoItem = ({ item, setEdit }) => {
         textArea.value = item.text;
         textArea.style.position = "fixed";
         document.body.appendChild(textArea);
-        textArea.focus();
         textArea.select();
         document.execCommand("copy");
         document.body.removeChild(textArea);
