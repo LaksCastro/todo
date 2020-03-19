@@ -20,7 +20,7 @@ export default createGlobalStyle`
 
         list-style: none;
 
-        line-heigth: 2;
+        line-height: 2;
 
         -webkit-touch-callout: none;
     -webkit-user-select: none;
