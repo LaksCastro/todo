@@ -20,15 +20,13 @@ export default createGlobalStyle`
 
         list-style: none;
 
-        line-height: 2;
-
         -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none; 
-    -moz-user-select: none;
-    -ms-user-select: none; 
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -khtml-user-select: none; 
+        -moz-user-select: none;
+        -ms-user-select: none; 
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
     }
     ::-webkit-scrollbar { display: none; }
     
@@ -38,7 +36,7 @@ export default createGlobalStyle`
     html, body{
         width: 100%;
         height: 100%;
-    background: #0A0A0A;
+        background: #0A0A0A;
     }
     input, button{
         background: transparent;
