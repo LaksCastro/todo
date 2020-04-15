@@ -3,7 +3,7 @@
 This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.
 
 # Live Demo
-You can check the working application at [this link.](https://laks-todo.netlify.com)
+You can check the working application at [this link.](https://laks-todo.netlify.app)
 
 # Turn on your machine
 >  _**Dont forget to check enviroment variables, in .env.example file, you can get your variables creating a new Firebase project [here](https://console.firebase.google.com/)**_
