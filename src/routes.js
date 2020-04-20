@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -76,7 +77,7 @@ const Routes = () => {
         );
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/todo"/>
             <>
                 <GlobalStyled />
                 <ToastContainer />
