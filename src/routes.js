@@ -77,7 +77,7 @@ const Routes = () => {
         );
 
     return (
-        <BrowserRouter basename="/todo"/>
+        <BrowserRouter basename="/todo/">
             <>
                 <GlobalStyled />
                 <ToastContainer />
