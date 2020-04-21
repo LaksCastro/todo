@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
+import Hammer from "hammerjs";
 
 import { Types as TypesToast } from "../../store/ducks/toast";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,6 +19,8 @@ const TodoItem = ({ item, setEdit }) => {
   const dispatch = useDispatch();
   const { isVisible } = useSelector((state) => state.toast);
   let buttonPressTimer;
+
+  const todo = useRef(null);
 
   const [confirm, setConfirm] = useState({
     visible: false,
@@ -56,9 +60,6 @@ const TodoItem = ({ item, setEdit }) => {
     document.body.removeChild(textArea);
   }
 
-  function handleButtonPress() {
-    buttonPressTimer = setTimeout(onLongPress, 500);
-  }
   function onLongPress() {
     copyToClipboard(item.text);
     if (isVisible) return;
@@ -69,9 +70,6 @@ const TodoItem = ({ item, setEdit }) => {
       },
     });
   }
-  function handleButtonRelease() {
-    clearTimeout(buttonPressTimer);
-  }
 
   function onConfirmDelete() {
     confirm.onConfirm();
@@ -80,13 +78,14 @@ const TodoItem = ({ item, setEdit }) => {
     confirm.onCancel();
   }
 
+  useEffect(() => {
+    if (todo && todo.current)
+      new Hammer(todo.current, { time: 1000 }).on("press", onLongPress);
+  }, [todo]);
+
   return (
     <S.TodoWrapper
-      onTouchStart={handleButtonPress}
-      onTouchEnd={handleButtonRelease}
-      onMouseDown={handleButtonPress}
-      onMouseUp={handleButtonRelease}
-      onMouseLeave={handleButtonRelease}
+      ref={todo}
       background={item.marked ? "dimgrey" : "transparent"}
       key={item.id}
     >
