@@ -1,9 +1,11 @@
-<img align="center" src="./src/assets/logo192.png" alt="To Do List Logo" />
+<p align="center">
+    <img src="./src/assets/logo192.png" alt="To Do List Logo" />
+<p>
 
 This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.
 
 # Live Demo
-You can check the working application at [this link.](https://laks-todo.netlify.app)
+You can check the working application at [this link.](https://lakscastro.github.io/todo/)
 
 # Turn on your machine
 >  _**Dont forget to check enviroment variables, in .env.example file, you can get your variables creating a new Firebase project [here](https://console.firebase.google.com/)**_

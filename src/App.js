@@ -3,14 +3,19 @@ import { Provider } from "react-redux";
 
 import store from "./store/index";
 
+import GlobalStyled from "./reset";
+
 import Routes from "./routes";
 
 const App = () => {
-    return (
-        <Provider store={store}>
-            <Routes />
-        </Provider>
-    );
+  return (
+    <>
+      <GlobalStyled />
+      <Provider store={store}>
+        <Routes />
+      </Provider>
+    </>
+  );
 };
 
 export default App;

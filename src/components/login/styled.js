@@ -11,11 +11,11 @@ export const AuthWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0B0A0D;
+  background-color: #0b0a0d;
 `;
 export const LabelAction = styled.h1`
   font-size: 2.5em;
-  color: #79B538;
+  color: #79b538;
   margin: 2rem 0;
 `;
 export const AppLogo = styled.img`

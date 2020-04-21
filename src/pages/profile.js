@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import ProfileComponent from "../components/profile/index";
+import ProfileComponent from "../components/Profile/index";
 
-const Profile = ({ ...props }) => <ProfileComponent {...props} />
+const Profile = ({ ...props }) => <ProfileComponent {...props} />;
 
 export default Profile;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import LoginComponent from "../components/login/index";
+import LoginComponent from "../components/Login/index";
 
 const Login = ({ ...props }) => <LoginComponent {...props} />;
 
