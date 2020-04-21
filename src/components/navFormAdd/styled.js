@@ -2,46 +2,46 @@ import styled from "styled-components";
 import { Form, Input } from "@rocketseat/unform";
 
 export const NavFormUnform = styled(Form)`
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 
-    align-items: center;
-    border: 3px solid #1c1b1e;
+  align-items: center;
+  border: 3px solid #1c1b1e;
 
-    border-radius: 8px;
-    overflow: hidden;
+  border-radius: 8px;
+  overflow: hidden;
 `;
 export const InputUnform = styled(Input)`
-    flex: 1;
-    padding: 0.8rem 1.2rem;
-    min-width: 0;
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  min-width: 0;
 
-    color: white;
+  color: white;
 
-    transition: var(--transition);
+  transition: var(--transition);
 
-    &:hover,
-    &:focus {
-        background: rgba(28, 27, 30, 0.5);
-    }
+  &:hover,
+  &:focus {
+    background: rgba(28, 27, 30, 0.5);
+  }
 `;
 export const ButtonUnformContainer = styled.button`
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    background: #79b538;
-    min-width: 49px;
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  background: #79b538;
+  min-width: 49px;
 
-    transition: var(--transition);
-    &:hover {
-        background: #68a427;
-    }
+  transition: var(--transition);
+  &:hover {
+    background: #68a427;
+  }
 `;
 export const ButtonUnform = styled.div`
-    color: white;
+  color: white;
 
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 
-    padding: 8px;
+  padding: 8px;
 `;

@@ -2,9 +2,9 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/storage";
 
-import firebaseConfig from "./secret/firebaseConfig";
+import config from "./config";
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 export const db = firebase.firestore();
 

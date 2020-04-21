@@ -1,5 +1,5 @@
-import React from "react"
+import React from "react";
 
-import Index from "../components/index/index"
+import Index from "../components/Index/index";
 
-export default ({ ...props }) => <Index {...props} />
+export default ({ ...props }) => <Index {...props} />;

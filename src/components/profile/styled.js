@@ -3,104 +3,100 @@ import { Link } from "react-router-dom";
 import { Form, Input } from "@rocketseat/unform";
 
 export const FileForm = styled.div`
-    width: 100%;
+  width: 100%;
 
-    padding: 16px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 export const FileContainer = styled.div`
-    position: relative;
-    width: 130px;
-    height: 130px;
-    max-width: 180px;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  max-width: 180px;
 
-    border-radius: 100%;
+  border-radius: 100%;
 
-    border: 3px solid #79b538;
+  border: 3px solid #79b538;
 
-    transition: var(--transition);
-    cursor: pointer;
-    &:hover {
-        border: 3px solid rgb(101, 161, 36);
-    }
+  transition: var(--transition);
+  cursor: pointer;
+  &:hover {
+    border: 3px solid rgb(101, 161, 36);
+  }
 `;
 export const File = styled.img`
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 
-    border-radius: 100%;
+  border-radius: 100%;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  object-position: center;
 
-    position: absolute;
+  position: absolute;
 
-    z-index: 50;
+  z-index: 50;
 `;
 export const FileIconBox = styled.div`
-    border-radius: 100%;
-    top: 0;
-    right: 0;
+  border-radius: 100%;
+  top: 0;
+  right: 0;
 
-    transition: var(--transition);
+  transition: var(--transition);
 
-    position: absolute;
+  position: absolute;
 
-    z-index: 100;
+  z-index: 100;
 
-    width: 36px;
-    height: 36px;
-    background: #79b538;
+  width: 36px;
+  height: 36px;
+  background: #79b538;
 
-    padding: 9px;
+  padding: 9px;
 
-    color: white;
+  color: white;
 
-    transition: var(--transition);
-    cursor: pointer;
+  transition: var(--transition);
+  cursor: pointer;
 `;
 
 export const FileLoadingContainer = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    z-index: 85;
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 85;
 `;
 export const FileLoadingImg = styled.img`
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 
-    border-radius: 100%;
+  border-radius: 100%;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  object-position: center;
 
-    position: absolute;
+  position: absolute;
 `;
 
 export const FileInputUnform = styled.input`
-    display: none;
+  display: none;
 `;
-
-
-
-
 
 export const FormUnform = styled(Form)`
   width: 100%;
@@ -144,11 +140,11 @@ export const InputUnform = styled(Input)`
     border: 3px solid #79b538;
     background: #29292a;
   }
-  &[readonly]{
-      cursor: not-allowed;
-      background: #0B0A0D;
-      color: #44434B;
-      border: 3px solid #25242C;
+  &[readonly] {
+    cursor: not-allowed;
+    background: #0b0a0d;
+    color: #44434b;
+    border: 3px solid #25242c;
   }
 `;
 
@@ -167,7 +163,7 @@ export const ButtonForm = styled.button`
 
   height: 54px;
 
-  background: ${props => props.background || "#79b538"};
+  background: ${(props) => props.background || "#79b538"};
 
   font-weight: bolder;
   padding: 12px 1.5rem;
@@ -176,10 +172,10 @@ export const ButtonForm = styled.button`
 
   transition: var(--transition);
 
-  color: ${props => props.color || "#0B0A0D"};
+  color: ${(props) => props.color || "#0B0A0D"};
 
   &:hover {
-      filter: grayscale(20%);
+    filter: grayscale(20%);
   }
 
   &[disabled] {
@@ -190,4 +186,4 @@ export const ButtonForm = styled.button`
 export const IndexLink = styled(Link)`
   color: lightgrey;
   padding: 2rem;
-`
+`;
