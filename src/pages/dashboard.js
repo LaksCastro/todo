@@ -1,5 +1,5 @@
-import React from "react"
+import React from "react";
 
-import TodoComponent from "../components/todo/index"
+import TodoComponent from "../components/Todo/index";
 
-export default ({ ...props }) => <TodoComponent {...props} />
+export default ({ ...props }) => <TodoComponent {...props} />;
