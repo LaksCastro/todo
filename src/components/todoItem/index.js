@@ -39,17 +39,20 @@ const TodoItem = ({ item, setEdit }) => {
   }
 
   //TODO ITEM ACTION
+
   function handleRemoveTodo() {
     setConfirm({
       ...confirm,
       visible: true,
     });
   }
+
   function handleToggleCompleted() {
     db.collection("todo").doc(item.id).update({
       completed: !item.completed,
     });
   }
+
   function copyToClipboard() {
     const textArea = document.createElement("textarea");
     textArea.value = item.text;
