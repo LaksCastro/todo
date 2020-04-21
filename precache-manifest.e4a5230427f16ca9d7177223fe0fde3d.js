@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f806a9a719ae7da4e2f3261316a82e70",
+    "revision": "cc85ba0b4bdaa884c0339e3227482f6f",
     "url": "/todo/index.html"
   },
   {
-    "revision": "e7cebc813717b13f88c9",
-    "url": "/todo/static/css/main.94d2027f.chunk.css"
+    "revision": "1b413e8a13c37d6454cf",
+    "url": "/todo/static/css/main.7bbf6f1e.chunk.css"
   },
   {
-    "revision": "f546b338071906740e21",
-    "url": "/todo/static/js/2.75536366.chunk.js"
+    "revision": "643e54fa2094dd3a0531",
+    "url": "/todo/static/js/2.3bb80597.chunk.js"
   },
   {
-    "revision": "e7cebc813717b13f88c9",
-    "url": "/todo/static/js/main.c5af9867.chunk.js"
+    "revision": "1b413e8a13c37d6454cf",
+    "url": "/todo/static/js/main.0cede8af.chunk.js"
   },
   {
-    "revision": "789de51c682f2f9c2aab",
-    "url": "/todo/static/js/runtime-main.19968b85.js"
+    "revision": "10ba04c2f5447a16bc3d",
+    "url": "/todo/static/js/runtime-main.bdb87354.js"
   },
   {
     "revision": "275682d973ee738df6e4ec071768ce23",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/todo/static/media/loadingUser.4223d91c.svg"
   },
   {
-    "revision": "177fbe286c3646dfe3c83a78e60d7d02",
-    "url": "/todo/static/media/logo.177fbe28.svg"
+    "revision": "6624a709dbf3e5598519f1604a446655",
+    "url": "/todo/static/media/logo.6624a709.svg"
   },
   {
     "revision": "5bd0e45fccaf21000a09eb91fb75bf04",

@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/todo/static/css/main.94d2027f.chunk.css",
-    "main.js": "/todo/static/js/main.c5af9867.chunk.js",
-    "main.js.map": "/todo/static/js/main.c5af9867.chunk.js.map",
-    "runtime-main.js": "/todo/static/js/runtime-main.19968b85.js",
-    "runtime-main.js.map": "/todo/static/js/runtime-main.19968b85.js.map",
-    "static/js/2.75536366.chunk.js": "/todo/static/js/2.75536366.chunk.js",
-    "static/js/2.75536366.chunk.js.map": "/todo/static/js/2.75536366.chunk.js.map",
+    "main.css": "/todo/static/css/main.7bbf6f1e.chunk.css",
+    "main.js": "/todo/static/js/main.0cede8af.chunk.js",
+    "main.js.map": "/todo/static/js/main.0cede8af.chunk.js.map",
+    "runtime-main.js": "/todo/static/js/runtime-main.bdb87354.js",
+    "runtime-main.js.map": "/todo/static/js/runtime-main.bdb87354.js.map",
+    "static/js/2.3bb80597.chunk.js": "/todo/static/js/2.3bb80597.chunk.js",
+    "static/js/2.3bb80597.chunk.js.map": "/todo/static/js/2.3bb80597.chunk.js.map",
     "index.html": "/todo/index.html",
-    "precache-manifest.f408f51932a9ed496d752bcd79582d2f.js": "/todo/precache-manifest.f408f51932a9ed496d752bcd79582d2f.js",
+    "precache-manifest.e4a5230427f16ca9d7177223fe0fde3d.js": "/todo/precache-manifest.e4a5230427f16ca9d7177223fe0fde3d.js",
     "service-worker.js": "/todo/service-worker.js",
-    "static/css/main.94d2027f.chunk.css.map": "/todo/static/css/main.94d2027f.chunk.css.map",
+    "static/css/main.7bbf6f1e.chunk.css.map": "/todo/static/css/main.7bbf6f1e.chunk.css.map",
     "static/media/check.svg": "/todo/static/media/check.275682d9.svg",
     "static/media/github.svg": "/todo/static/media/github.e4f2d6b0.svg",
     "static/media/google.svg": "/todo/static/media/google.09aea0f5.svg",
     "static/media/loading.svg": "/todo/static/media/loading.d8f8be86.svg",
     "static/media/loadingUser.svg": "/todo/static/media/loadingUser.4223d91c.svg",
-    "static/media/logo.svg": "/todo/static/media/logo.177fbe28.svg",
+    "static/media/logo.svg": "/todo/static/media/logo.6624a709.svg",
     "static/media/microsoft.svg": "/todo/static/media/microsoft.5bd0e45f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.19968b85.js",
-    "static/js/2.75536366.chunk.js",
-    "static/css/main.94d2027f.chunk.css",
-    "static/js/main.c5af9867.chunk.js"
+    "static/js/runtime-main.bdb87354.js",
+    "static/js/2.3bb80597.chunk.js",
+    "static/css/main.7bbf6f1e.chunk.css",
+    "static/js/main.0cede8af.chunk.js"
   ]
 }
