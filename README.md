@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://twitter.com/lakscastro" target="_blank">
-    <img src="https://img.shields.io/badge/tech-firebase-orange" alt="Project Technology" />
+    <img src="https://img.shields.io/badge/backend-firebase-orange" alt="Project Technology" />
   </a>
   <a href="https://twitter.com/lakscastro" target="_blank">
     <img src="https://img.shields.io/badge/language-javascript-yellow" alt="Project Technology" />
