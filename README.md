@@ -1,8 +1,12 @@
 <p align="center">
     <img src="./src/assets/logo192.png" alt="To Do List Logo" />
 <p>
+<p align="center">⭐⭐⭐⭐⭐</p>
+<h1 align="center">
+    To Do List
+<h1>
+<p align="center">This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.</p>
 
-This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.
 
 # Live Demo
 You can check the working application at [this link.](https://lakscastro.github.io/todo/)
