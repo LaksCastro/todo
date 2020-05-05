@@ -7,6 +7,18 @@
 </h1>
 <p align="center">This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.</p>
 
+<p align="center">
+  <a href="https://twitter.com/lakscastro" target="_blank">
+    <img src="https://img.shields.io/badge/tech-firebase-yellow" alt="Project Technology" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://twitter.com/lakscastro" target="_blank">
+    <img src="https://img.shields.io/twitter/url?label=Follow%20%40LakCastro&logo=twitter&url=https%3A%2F%2Fwww.twitter.com%2Flakscastro%2F" alt="Follow" />
+  </a>
+</p>
+
 
 # Live Demo
 You can check the working application at [this link.](https://lakscastro.github.io/todo/)
