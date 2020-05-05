@@ -4,7 +4,7 @@
 <p align="center">⭐⭐⭐⭐⭐</p>
 <h1 align="center">
     To Do List
-<h1>
+</h1>
 <p align="center">This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.</p>
 
 
