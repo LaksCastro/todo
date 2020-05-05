@@ -17,6 +17,9 @@
   <a href="https://twitter.com/lakscastro" target="_blank">
     <img src="https://img.shields.io/badge/framework-react_js-blue" alt="Project Technology" />
   </a>
+  <a href="https://twitter.com/lakscastro" target="_blank">
+    <img src="https://img.shields.io/badge/archteture-redux-blueviolet" alt="Project Technology" />
+  </a>
 </p>
 
 <p align="center">
