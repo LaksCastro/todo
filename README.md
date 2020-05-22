@@ -5,7 +5,7 @@
 <h1 align="center">
     To Do List
 </h1>
-<p align="center">This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features.</p>
+<p align="center">This is a simple To Do List platform that uses React Js and Firestore as the backend, and its Authentication, Storage and Firestore features</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/backend-firebase-orange" alt="Project Technology" />
