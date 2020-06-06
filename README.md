@@ -54,3 +54,14 @@ See the demo page live:
 
 # Thanks
 This is a very simple application that I used to learn some new technologies for me, and during the development process the [Rocketseat community](https://rocketseat.com.br/comunidade) was present all the time, which is why I consider it __one of the best Brazilian communities.__
+
+<h2 align="center">
+  Open Source
+</h2>
+<p align="center">
+  <sub>Copyright © 2020-present, Laks Castro.</sub>
+</p>
+<p align="center">Rocketseat <a href="https://github.com/LaksCastro/todo/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
+<p align="center">
+  <img src="./src/assets/logo192.png" width="35" />
+</p>
