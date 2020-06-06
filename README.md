@@ -66,7 +66,7 @@ This is a very simple application that I used to learn some new technologies for
 <p align="center">
   <sub>Copyright © 2020-present, Laks Castro.</sub>
 </p>
-<p align="center">Rocketseat <a href="https://github.com/LaksCastro/todo/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
+<p align="center">To Do List <a href="https://github.com/LaksCastro/todo/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
 <p align="center">
   <img src="./src/assets/logo192.png" width="35" />
 </p>
