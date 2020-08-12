@@ -16,7 +16,7 @@
     "react-toastify": "^5.4.1",
     "redux": "^4.0.4",
     "reduxsauce": "^1.1.1",
-    "serialize-javascript": "^2.1.1",
+    "serialize-javascript": "^3.1.0",
     "styled-components": "^4.4.1",
     "styled-icons": "^8.6.0"
   },
