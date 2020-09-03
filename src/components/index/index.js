@@ -1,6 +1,6 @@
 import React from "react";
 
-import FullScreenGlitch from "../FullScreenGlitch/index";
+import FullScreenGlitch from "../fullScreenGlitch/index";
 
 import * as S from "./styled";
 

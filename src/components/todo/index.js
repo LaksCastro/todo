@@ -8,18 +8,18 @@ import firebase from "../../firebase";
 import { db } from "../../firebase";
 import "firebase/auth";
 
-import AllComplete from "../AllComplete";
-import LoadingData from "../LoadingData";
-import LoadingUser from "../LoadingUser";
+import AllComplete from "../allComplete";
+import LoadingData from "../loadingData";
+import LoadingUser from "../loadingUser";
 
-import UpdateTodo from "../UpdateTodo";
-import TodoItem from "../TodoItem";
+import UpdateTodo from "../updateTodo";
+import TodoItem from "../todoItem";
 
-import NavFormAdd from "../NavFormAdd";
+import NavFormAdd from "../navFormAdd";
 
-import HeaderMenu from "../HeaderMenu";
+import HeaderMenu from "../headerMenu";
 
-import Viewport from "../Viewport";
+import Viewport from "../viewport";
 
 import * as A from "./assets";
 

@@ -14,11 +14,11 @@ import Login from "../pages/login";
 import Register from "../pages/register";
 import Profile from "../pages/profile";
 import NotFound from "../pages/notFound";
-import MobileToast from "../components/MobileToast";
+import MobileToast from "../components/mobileToast";
 
 import { ToastContainer } from "react-toastify";
 
-import LoadingUser from "../components/LoadingUser";
+import LoadingUser from "../components/loadingUser";
 import Loading from "../assets/loadingUser.svg";
 
 import PrivateRoute from "./PrivateRoute";

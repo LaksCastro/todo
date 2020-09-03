@@ -1,5 +1,5 @@
 import React from "react";
 
-import PageNotFound from "../components/NotFound/index";
+import PageNotFound from "../components/notFound/index";
 
 export default ({ ...props }) => <PageNotFound {...props} />;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import RegisterComponent from "../components/Register/index";
+import RegisterComponent from "../components/register/index";
 
 const Register = ({ ...props }) => <RegisterComponent {...props} />;
 

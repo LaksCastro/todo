@@ -1,6 +1,6 @@
 import React from "react";
 
-import FullScreenGlitch from "../FullScreenGlitch";
+import FullScreenGlitch from "../fullScreenGlitch";
 
 export default () => (
   <FullScreenGlitch

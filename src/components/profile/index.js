@@ -9,10 +9,10 @@ import { toast } from "react-toastify";
 
 import LoadingUserImg from "../../assets/loadingUser.svg";
 
-import HeaderMenu from "../HeaderMenu";
-import Viewport from "../Viewport";
+import HeaderMenu from "../headerMenu";
+import Viewport from "../viewport";
 
-import LoadingUser from "../LoadingUser";
+import LoadingUser from "../loadingUser";
 
 import LoadingPhoto from "../../assets/loadingUser.svg";
 import Loading from "../../assets/loading.svg";
