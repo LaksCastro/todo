@@ -26,6 +26,8 @@ import PublicRoute from "./PublicRoute";
 
 import firebase from "../firebase";
 
+const basePath = process.env.REACT_APP_BASE_PATH || "/todo";
+
 const Routes = () => {
   const user = useSelector((state) => state.user);
   const isAuth = user.isAuth;
@@ -70,7 +72,7 @@ const Routes = () => {
   if (isAuth === null) return <LoadingUser img={Loading} />;
 
   return (
-    <BrowserRouter basename="/todo/">
+    <BrowserRouter basename={basePath}>
       <>
         <ToastContainer />
         <MobileToast />
