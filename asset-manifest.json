@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/todo/static/css/main.343f4095.chunk.css",
+    "main.css": "/todo/static/css/main.01676149.chunk.css",
     "main.js": "/todo/static/js/main.2de6cd99.chunk.js",
     "main.js.map": "/todo/static/js/main.2de6cd99.chunk.js.map",
     "runtime-main.js": "/todo/static/js/runtime-main.95144d85.js",
@@ -8,9 +8,9 @@
     "static/js/2.c5797a11.chunk.js": "/todo/static/js/2.c5797a11.chunk.js",
     "static/js/2.c5797a11.chunk.js.map": "/todo/static/js/2.c5797a11.chunk.js.map",
     "index.html": "/todo/index.html",
-    "precache-manifest.0517519713746ed1e49137507fdb7986.js": "/todo/precache-manifest.0517519713746ed1e49137507fdb7986.js",
+    "precache-manifest.b8bf768d24131e0c47c3b437d78c700b.js": "/todo/precache-manifest.b8bf768d24131e0c47c3b437d78c700b.js",
     "service-worker.js": "/todo/service-worker.js",
-    "static/css/main.343f4095.chunk.css.map": "/todo/static/css/main.343f4095.chunk.css.map",
+    "static/css/main.01676149.chunk.css.map": "/todo/static/css/main.01676149.chunk.css.map",
     "static/media/check.svg": "/todo/static/media/check.275682d9.svg",
     "static/media/github.svg": "/todo/static/media/github.e4f2d6b0.svg",
     "static/media/google.svg": "/todo/static/media/google.09aea0f5.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.95144d85.js",
     "static/js/2.c5797a11.chunk.js",
-    "static/css/main.343f4095.chunk.css",
+    "static/css/main.01676149.chunk.css",
     "static/js/main.2de6cd99.chunk.js"
   ]
 }
