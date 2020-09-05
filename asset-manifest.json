@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a107eb3.chunk.css",
+    "main.css": "/static/css/main.93b72408.chunk.css",
     "main.js": "/static/js/main.b38b5626.chunk.js",
     "main.js.map": "/static/js/main.b38b5626.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e9c2ae90.js",
@@ -8,9 +8,9 @@
     "static/js/2.db1f11a0.chunk.js": "/static/js/2.db1f11a0.chunk.js",
     "static/js/2.db1f11a0.chunk.js.map": "/static/js/2.db1f11a0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6631b8213506ce77cb73400266e8213c.js": "/precache-manifest.6631b8213506ce77cb73400266e8213c.js",
+    "precache-manifest.df24d4658950dd5e395312a17ae2f2fc.js": "/precache-manifest.df24d4658950dd5e395312a17ae2f2fc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3a107eb3.chunk.css.map": "/static/css/main.3a107eb3.chunk.css.map",
+    "static/css/main.93b72408.chunk.css.map": "/static/css/main.93b72408.chunk.css.map",
     "static/media/check.svg": "/static/media/check.275682d9.svg",
     "static/media/github.svg": "/static/media/github.e4f2d6b0.svg",
     "static/media/google.svg": "/static/media/google.09aea0f5.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.e9c2ae90.js",
     "static/js/2.db1f11a0.chunk.js",
-    "static/css/main.3a107eb3.chunk.css",
+    "static/css/main.93b72408.chunk.css",
     "static/js/main.b38b5626.chunk.js"
   ]
 }
