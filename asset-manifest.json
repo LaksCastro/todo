@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/todo/static/css/main.01676149.chunk.css",
-    "main.js": "/todo/static/js/main.2de6cd99.chunk.js",
-    "main.js.map": "/todo/static/js/main.2de6cd99.chunk.js.map",
-    "runtime-main.js": "/todo/static/js/runtime-main.95144d85.js",
-    "runtime-main.js.map": "/todo/static/js/runtime-main.95144d85.js.map",
-    "static/js/2.c5797a11.chunk.js": "/todo/static/js/2.c5797a11.chunk.js",
-    "static/js/2.c5797a11.chunk.js.map": "/todo/static/js/2.c5797a11.chunk.js.map",
-    "index.html": "/todo/index.html",
-    "precache-manifest.b8bf768d24131e0c47c3b437d78c700b.js": "/todo/precache-manifest.b8bf768d24131e0c47c3b437d78c700b.js",
-    "service-worker.js": "/todo/service-worker.js",
-    "static/css/main.01676149.chunk.css.map": "/todo/static/css/main.01676149.chunk.css.map",
-    "static/media/check.svg": "/todo/static/media/check.275682d9.svg",
-    "static/media/github.svg": "/todo/static/media/github.e4f2d6b0.svg",
-    "static/media/google.svg": "/todo/static/media/google.09aea0f5.svg",
-    "static/media/loading.svg": "/todo/static/media/loading.d8f8be86.svg",
-    "static/media/loadingUser.svg": "/todo/static/media/loadingUser.4223d91c.svg",
-    "static/media/logo.svg": "/todo/static/media/logo.ccdf03f0.svg",
-    "static/media/microsoft.svg": "/todo/static/media/microsoft.5bd0e45f.svg"
+    "main.css": "/static/css/main.3a107eb3.chunk.css",
+    "main.js": "/static/js/main.b38b5626.chunk.js",
+    "main.js.map": "/static/js/main.b38b5626.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e9c2ae90.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e9c2ae90.js.map",
+    "static/js/2.db1f11a0.chunk.js": "/static/js/2.db1f11a0.chunk.js",
+    "static/js/2.db1f11a0.chunk.js.map": "/static/js/2.db1f11a0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6631b8213506ce77cb73400266e8213c.js": "/precache-manifest.6631b8213506ce77cb73400266e8213c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3a107eb3.chunk.css.map": "/static/css/main.3a107eb3.chunk.css.map",
+    "static/media/check.svg": "/static/media/check.275682d9.svg",
+    "static/media/github.svg": "/static/media/github.e4f2d6b0.svg",
+    "static/media/google.svg": "/static/media/google.09aea0f5.svg",
+    "static/media/loading.svg": "/static/media/loading.d8f8be86.svg",
+    "static/media/loadingUser.svg": "/static/media/loadingUser.4223d91c.svg",
+    "static/media/logo.svg": "/static/media/logo.ccdf03f0.svg",
+    "static/media/microsoft.svg": "/static/media/microsoft.5bd0e45f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.95144d85.js",
-    "static/js/2.c5797a11.chunk.js",
-    "static/css/main.01676149.chunk.css",
-    "static/js/main.2de6cd99.chunk.js"
+    "static/js/runtime-main.e9c2ae90.js",
+    "static/js/2.db1f11a0.chunk.js",
+    "static/css/main.3a107eb3.chunk.css",
+    "static/js/main.b38b5626.chunk.js"
   ]
 }
